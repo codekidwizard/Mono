@@ -1,0 +1,3035 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@font-face {
+  font-family: 'Duplicate Sans';
+  src: url('DuplicateSans-Light.eot');
+  src: local('Duplicate Sans Light'), local('DuplicateSans-Light'),
+      url('DuplicateSans-Light.eot?#iefix') format('embedded-opentype'),
+      url('DuplicateSans-Light.woff2') format('woff2'),
+      url('DuplicateSans-Light.woff') format('woff'),
+      url('DuplicateSans-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+body{
+    overflow-x: hidden;
+    
+}
+#intro-screen {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background:black;
+    font-family: Arial, sans-serif;
+    font-style: oblique;
+    font-size: larger;
+    scroll-behavior: smooth;
+    overflow-y: hidden;
+    cursor: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    align-items: center;
+}
+.load1{
+  width: 60px;
+  height: 30px;
+  align-items: center;
+  position: relative;
+  top:350px;
+  left: -61px;
+  animation: first  1s linear ;
+  background: white;
+  border-radius: 5px;
+  transform: skewY(-20deg);
+  animation: first 2.2s ease-in-out;
+  animation-delay: 1s;
+  transition: 1s ease-in-out;
+}
+@keyframes first {
+0%{
+  width: 60px;
+  height: 30px;
+  align-items: center;
+  background: white;
+  border-radius: 5px;
+  transform: skewY(-20deg);
+}
+
+30%{
+  border-radius: 50px;
+  transform: skewY(-10deg);
+}
+
+50%{
+  height: 100%;
+  border-radius: 30px;
+  transform: skewY(-5deg);
+}
+100%{
+  width: 150%;
+  height: 4000px;
+  align-items: center;
+  position: relative;
+top: 0;
+left: 0;
+bottom: 0;
+right: 0;
+  background: white;
+  border-radius: 5px;
+  transform: skewY(0deg);
+}
+}
+.load2{
+  width: 60px;
+  height: 30px;
+  background: white;
+  align-items: center;
+  position: relative;
+  top: 320px;
+  border-radius: 5px;
+  transform: skewY(-20deg);
+}
+.load3{
+  width: 60px;
+  height: 30px;
+  background: white;
+  align-items: center;
+  position: relative;
+  top: 290px;
+left: 60px;
+border-radius: 5px;
+transform: skewY(-20deg);
+}
+
+  #main-content {
+    display: none;
+    scroll-snap-type: y proximity;
+    transition:opacity 1.5s ease-in;
+    animation: mid 2s ease-in;
+  }
+  @keyframes mid {
+    0%{
+opacity: 0;
+    }
+    100%{
+      opacity: 1;
+    }
+  }
+  #popup-button{
+    width: 60px;
+    height: 60px;
+    cursor:pointer;
+    position: relative;
+    left:1200px;
+    top: 100px;
+    opacity: 0;
+}
+.popup-menu {
+    display: none; /* Hide the menu by default */
+    background-color:white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    position: absolute;
+    left:1200px;
+    top: 100px;
+    z-index: 1000;
+    color:black;
+    width: 400px;
+    height: 500px;
+    border-radius: 20px;
+    opacity: 0;
+  }
+  
+  .popup-menu a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #bab5b5;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size:20px;
+    font-weight: 300;
+    font-style: oblique;
+    opacity: 0;
+  }
+  header{
+    width: 100%;
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.459);
+    backdrop-filter: blur(2px);
+    position: fixed;
+    z-index: 9999999;
+}
+.logo{
+    position: relative;
+    left: 150px;
+    bottom:20px;
+    width: 152px;
+    height: 152px;
+    object-fit: contain;
+}
+ul{
+    width: 90%;
+    
+}
+ul li{
+    display: inline-block;
+    margin-left: 2%;
+    transform: all 0.5s ease;
+    position: relative;
+    bottom:115px;
+    left: 500px;
+  
+}
+
+ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 23px;
+font-family:"DM Sans";
+font-style: normal;
+font-weight: 500;
+}
+.svg{
+    position: relative;
+    top: 5px;
+}
+.btn1 {
+    position: relative;
+    bottom: 115px;
+    left: 700px;
+    width: 90px;
+    height: 50px;
+    border-radius: 10px;
+    background: #0055ba;
+ color: white;
+ text-decoration: none;
+ border: none;
+ font-size: 18px;
+ line-height: 20px;
+ font-family:"DM Sans";
+ font-style: normal;
+ font-weight: 500;
+}
+.monow{
+    width: 310px;
+    height: 50px;
+    position: relative;
+    top: 220px;
+    left: 150px;
+background:#f5f5f5; 
+border-radius: 25px;
+}
+.text1 a{
+    color: black;
+    font-size: 15px;
+    font-family:"DM Sans";
+font-weight: 500;
+text-decoration: none;
+text-align: center;
+position: relative;
+bottom: 15px;
+left: 73px;
+}
+.btn2{
+    background: #0055ba;
+width: 55px;
+height: 25px;
+font-size: 13px;
+line-height: 25px;
+font-family:"DM Sans";
+font-style: normal;
+font-weight: 400;
+text-align: center;
+position: relative;
+top: 13px;
+left: 12px;
+border-radius: 20px;
+color: white;
+}
+.svg2{
+    position: relative;
+    top: -40px;
+    left: 283px; 
+    width: 20px;
+}
+.svg2:hover{
+    position: relative;
+    top: -40px;
+    left: 285px; 
+    width: 20px;
+}
+.text2{
+    font-size: 102px;
+    line-height: 115px;
+    font-weight: 500;
+    font-family: 'Duplicate Sanss';
+    width: 700px;
+    position: relative;
+    top: 270px;
+    left: 150px;
+    text-align: left;
+}
+.text3{
+    font-size: 29px;
+    line-height: 38px;
+    font-weight: 400;
+    font-family: "DM Sans";
+    width: 680px;
+    position: relative;
+    top: 310px;
+    left: 150px;
+}
+@font-face {
+    font-family: 'Duplicate Sanss';
+    src: url('DuplicateSans-Medium.eot');
+    src: local('Duplicate Sans Medium'), local('DuplicateSans-Medium'),
+        url('DuplicateSans-Medium.eot?#iefix') format('embedded-opentype'),
+        url('DuplicateSans-Medium.woff2') format('woff2'),
+        url('DuplicateSans-Medium.woff') format('woff'),
+        url('DuplicateSans-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+.btn3{
+width: 205px;
+height: 55px;
+border-radius: 10px;
+border: none;
+position: relative;
+top: 355px;
+left: 150px;
+line-height: 30px;
+font-family: "DM Sans";
+font-size: 18px;
+background: #0055ba;
+color: white;
+}
+.nc-icon-wrappers{
+    position: relative;
+    top: 5px;
+    width: 15px;
+}
+.btn4{
+    width: 164px;
+    height: 55px;
+    border-radius: 10px;
+    border: none;
+    position: relative;
+    top: 355px;
+    left: 175px;
+    line-height: 28px;
+    font-family: "DM Sans";
+    font-size: 18px;
+    background: #f5f5f5;
+    color: black;
+    }
+    .text4{
+        font-size: 17px;
+        line-height: 23px;
+        font-weight: 500;
+        font-family: "DM Sans";
+        width: 680px;
+        position: relative;
+        top: 500px;
+        left: 150px;
+        color:#606060;
+    }
+  .trusted{
+    width: 10042px;
+    height: 30px;
+        position: relative;
+        top: 570px;
+        left: 150px; 
+  }
+  .logo1{
+    width: 150px;
+  }
+  .logo2{
+    width: 120px;
+    position: relative;
+    top: -10px;
+    left: 135px; 
+  }
+  .logo3{
+    width: 190px;
+    position: relative;
+    left: 270px; 
+  }
+  .logo4{
+    width: 190px;
+    position: relative;
+
+    left: 405px; 
+  }
+  .text5{
+    font-size: 72px;
+    line-height: 74px;
+    font-weight: 500;
+    font-family: 'Duplicate Sanss';
+    width: 600px;
+    position: relative;
+    top: 690px;
+    left: 150px;
+    text-align: left; 
+  }
+  .text6{
+    font-size: 29px;
+    line-height: 38px;
+    font-weight: 400;
+    font-family: "DM Sans";
+    width: 680px;
+    position: relative;
+    top: 720px;
+    left: 150px;
+  }
+  .connect{
+    width: 1050px;
+    height: 500px;
+    position: relative;
+    top: 800px;
+    left: 150px;
+  }
+  .connectimg{
+    width: 1150px;
+    height: 510px;
+border-radius: 20px;
+  }
+  .connectlogo{
+    width: 60px;
+    position: relative;
+    top: -420px;
+    left: 50px;
+
+  }
+  .text7{
+    font-size: 52px;
+    line-height: 45px;
+    font-weight: 500;
+    font-family: 'Duplicate Sanss';
+    width: 600px;
+    position: relative;
+    top: -400px;
+    left: 60px;
+    text-align: left; 
+    color: white;
+  }
+  .text8{
+    font-size: 22px;
+    line-height: 25px;
+    font-weight: 400;
+    font-family: "DM Sans";
+    width: 500px;
+    position: relative;
+    top: -360px;
+    left: 60px;
+    color: white;
+  }
+  .btn5{
+    width: 210px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    position: relative;
+    top: -330px;
+    left: 60px;
+    line-height: 30px;
+    font-family: "DM Sans";
+    font-size: 18px;
+    background: white;
+    color: #1462bf;
+  }
+  
+  .DirectPay{
+    width: 550px;
+    height: 710px;
+    position: relative;
+    top: 830px;
+    left: 150px;
+  }
+  .DirectPayimg{
+    width: 550px;
+    height: 710px;
+border-radius: 20px;
+  }
+  .DirectPaylogo{
+    width: 60px;
+    position: relative;
+    top: -670px;
+    left: 50px;
+
+  }
+  .text9{
+    font-size: 54px;
+    line-height: 45px;
+    font-weight: 500;
+    font-family: 'Duplicate Sanss';
+    width: 600px;
+    position: relative;
+    top: -650px;
+    left: 60px;
+    text-align: left; 
+  }
+  .text10{
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 400;
+    font-family: "DM Sans";
+    width: 360px;
+    position: relative;
+    top: -610px;
+    left: 60px;
+  }
+  .btn6{
+    width: 210px;
+    height: 55px;
+    border-radius: 10px;
+    border: none;
+    position: relative;
+    top: -585px;
+    left: 60px;
+    line-height: 35px;
+    font-family: "DM Sans";
+    font-size: 18px;
+    color: white;
+    background: #1462bf;
+  }
+  .text11{
+    font-size: 18px;
+    line-height: 23px;
+    font-weight: 500;
+    font-family: "DM Sans";
+    width: 360px;
+    position: relative;
+    top: -555px;
+    left: 70px;
+  }
+  .img2{
+    width: 140px;
+    position: relative;
+    top: -585px;
+    left: 230px;
+  }
+  .Percept{
+    width: 570px;
+    height: 710px;
+    position: relative;
+    top: 120px;
+    left: 720px;
+  }
+  .Perceptimg{
+    width: 570px;
+    height: 710px;
+border-radius: 20px;
+  }
+  .Perceptlogo{
+    width: 40px;
+    position: relative;
+    top: -660px;
+    left: 50px;
+z-index: 99999;
+  }
+  .text12{
+    font-size: 54px;
+    line-height: 45px;
+    font-weight: 500;
+    font-family: 'Duplicate Sanss';
+    width: 600px;
+    position: relative;
+    top: -650px;
+    left: 60px;
+    text-align: left; 
+    color: white;
+  }
+  .text13{
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 400;
+    font-family: "DM Sans";
+    width: 500px;
+    position: relative;
+    top: -610px;
+    left: 60px;
+    color: white;
+  }
+  .btn7{
+    width: 180px;
+    height: 55px;
+    border-radius: 10px;
+    border: none;
+    position: relative;
+    top: -585px;
+    left: 60px;
+    line-height: 40px;
+    font-family: "DM Sans";
+    font-size: 18px;
+    color: white;
+background: #202020;
+  }
+  .bts{
+    position: relative;
+    top: 2px; 
+    left: 2px;
+  }
+  .text14{
+    position: relative;
+    top: 320px;
+    left: 150px;
+    font-size: 64px;
+    line-height: 74px;
+    font-weight: 500;
+    font-family: 'Duplicate Sanss';
+    width: 600px;
+    text-align: left; 
+  }
+  .text15{
+    position: relative;
+    top: 350px;
+    left: 150px;
+    font-size: 26px;
+    line-height: 36px;
+    font-weight: 400;
+    font-family: "DM Sans";
+    width: 550px;
+  }
+  .slider {
+    display: flex;
+   position:relative;
+ top: 431px;
+  left: 150px;
+    width: 1150px;
+    height:750px; 
+    overflow: hidden;
+    border-radius:20px;
+  }
+  
+  .slide {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+   top:0px;
+    right: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    background:#f5f5f5;
+    color: black;
+  }
+  
+  .slide.active {
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+     right: 0;
+  }
+  .btn8{
+    position: relative;
+    top: 60px;
+    left: 60px;
+    font-size: 22px;
+    line-height: 28px;
+    font-weight: 500;
+    font-family: "DM Sans";
+    width: 130px;
+    height: 65px;
+    background: black;
+    color: white;
+    text-align: center;
+    border-radius: 50px;
+  }
+  .text17{
+    position: relative;
+    top: 13px;
+    left: 230px;
+    font-size: 22px;
+    line-height: 28px;
+    font-weight: 500;
+    font-family: "DM Sans";
+  }
+  .text18{
+    position: relative;
+    top: -13px;
+    left: 530px;
+    font-size: 22px;
+    line-height: 28px;
+    font-weight: 500;
+    font-family: "DM Sans";
+  }
+  .text19{
+    position: relative;
+    top: -42px;
+    left: 800px;
+    font-size: 22px;
+    line-height: 28px;
+    font-weight: 500;
+    font-family: "DM Sans";
+  }
+  
+  .text20{
+    position: relative;
+    top: 78px;
+    left: 60px;
+    font-size: 22px;
+    line-height: 28px;
+    font-weight: 500;
+    font-family: "DM Sans";
+  }
+  .btn9{
+    position: relative;
+    top: 32px;
+    left: 200px;
+    font-size: 22px;
+    line-height: 28px;
+    font-weight: 500;
+    font-family: "DM Sans";
+    width: 300px;
+    height: 60px;
+    background: black;
+    color: white;
+    text-align: center;
+    border-radius: 50px;
+  }
+  .text22{
+    position: relative;
+    top: -10px;
+    left: 530px;
+    font-size: 22px;
+    line-height: 28px;
+    font-weight: 500;
+    font-family: "DM Sans";
+  }
+  .text23{
+    position: relative;
+    top: -39px;
+    left: 800px;
+    font-size: 22px;
+    line-height: 28px;
+    font-weight: 500;
+    font-family: "DM Sans";
+  }
+    
+  .text24{
+    position: relative;
+    top: 78px;
+    left: 60px;
+    font-size: 22px;
+    line-height: 28px;
+    font-weight: 500;
+    font-family: "DM Sans";
+  }
+  .text25{
+    position: relative;
+    top: 52px;
+    left: 200px;
+    font-size: 22px;
+    line-height: 28px;
+    font-weight: 500;
+    font-family: "DM Sans";
+  
+  }
+  .btn10{
+    position: relative;
+    top: 6px;
+    left: 470px;
+    font-size: 22px;
+    line-height: 28px;
+    font-weight: 500;
+    font-family: "DM Sans";
+    width: 300px;
+    height: 60px;
+    background: black;
+    color: white;
+    text-align: center;
+    border-radius: 50px;
+  }
+  .text27{
+    position: relative;
+    top: -39px;
+    left: 800px;
+    font-size: 22px;
+    line-height: 28px;
+    font-weight: 500;
+    font-family: "DM Sans";
+  }
+  .text28{
+    position: relative;
+    top: 78px;
+    left: 60px;
+    font-size: 22px;
+    line-height: 28px;
+    font-weight: 500;
+    font-family: "DM Sans";
+  }
+  .text29{
+    position: relative;
+    top: 52px;
+    left: 200px;
+    font-size: 22px;
+    line-height: 28px;
+    font-weight: 500;
+    font-family: "DM Sans";
+  
+  }
+  .text30{
+    position: relative;
+    top: 22px;
+    left: 500px;
+    font-size: 22px;
+    line-height: 28px;
+    font-weight: 500;
+    font-family: "DM Sans";
+
+  }
+  .btn11{
+    position: relative;
+    top: -19px;
+    left: 770px;
+    font-size: 22px;
+    line-height: 28px;
+    font-weight: 500;
+    font-family: "DM Sans";
+    width: 300px;
+    height: 60px;
+    background: black;
+    color: white;
+    text-align: center;
+    border-radius: 50px;
+  }
+  .text31{
+    position: relative;
+    top: 100px;
+    left: 60px;
+    font-size: 50px;
+    line-height: 56px;
+    font-weight: 300;
+    font-family: 'Duplicate Sanss';
+    width: 500px;
+    text-align: left;
+  }
+  .text32{
+    position: relative;
+    top: 120px;
+    left: 60px;
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 400;
+    font-family: "DM Sans";
+    color: #696969;
+    width: 550px;
+  }
+  .text33{
+    position: relative;
+    top: 150px;
+    left: 60px;
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 400;
+    font-family: "DM Sans";
+    color: #696969;
+    width: 550px;
+  }
+  .text34{
+    position: relative;
+    top: 165px;
+    left: 60px;
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 400;
+    font-family: "DM Sans";
+    color: #1462bf;
+    width: 550px;
+  }
+  .nc{
+    position: relative;
+    top: 5px;
+  }
+  .img4{
+    position: relative;
+    top:-220px;
+left: 640px;
+  }
+  .img5l{
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    background: white;
+    box-shadow: 0 0 10 black;
+    position: relative;
+    top:-790px;
+    left: 940px;
+    z-index: 99999;
+    box-shadow: 
+               0 0 10px #6060607e;
+  }
+  .text35{
+    font-size: 64px;
+    line-height: 74px;
+    font-weight: 500;
+    font-family: 'Duplicate Sanss';
+    width: 700px;
+    position: relative;
+    top: 581px;
+    left: 150px;
+    text-align: left;
+  }
+  .text36{
+    position: relative;
+    top: 600px;
+    left: 150px;
+    font-size: 28px;
+    line-height: 25px;
+    font-weight: 400;
+    font-family: "DM Sans";
+    width: 550px;
+  }
+
+.comment{
+  width: 1150px;
+  height: 850px;
+  position: relative;
+  top: 680px;
+  left: 150px;
+}
+.comment1{
+  width: 570px;
+  height: 850px;
+  background: #f5f5f5;
+  border-radius: 20px;
+  color: #000;
+  animation: cude 20s ease-in-out infinite;
+  z-index: 999999;
+  transition: 0.5s ease-in-out;
+  position: relative;
+  top: 0;
+}
+@keyframes cude {
+  0%{
+    opacity: 1;
+  }
+  50%{
+    opacity: 0;
+    color: #0000007c;
+  }
+  
+  70%{
+    opacity: 0;
+    color: #00000000;
+  }
+  100%{
+    opacity: 1;
+    color: #000;
+  }
+}
+.text37{
+  font-size: 47px;
+  line-height: 54px;
+  font-weight: 500;
+  font-family: 'Duplicate Sanss';
+  width: 400px;
+  position: relative;
+  top: 60px;
+  left: 60px;
+  text-align: left;
+}
+.comment2{
+  width: 570px;
+  height: 850px;
+  background: #f5f5f5;
+  border-radius: 20px;
+  color: #000;
+  position: relative;
+  top: -850px;
+  right: -580px;
+  animation:  cud 20s ease-in-out infinite;
+  z-index: 999999;
+  transition: 0.5s ease-in-out;
+}
+.text38{
+  font-size: 47px;
+  line-height: 54px;
+  font-weight: 500;
+  font-family: 'Duplicate Sanss';
+  width: 400px;
+  position: relative;
+  top: 60px;
+  left: 60px;
+  text-align: left;
+}
+@keyframes cud {
+  0%{
+    opacity: 1;
+  }
+  50%{
+    opacity: 0;
+    color: #0000007c;
+  }
+  
+  60%{
+    opacity: 0;
+    color: #00000011;
+  }
+  70%{
+    opacity: 0;
+    color: #00000000;
+  }
+  100%{
+    opacity: 1;
+    color: #000;
+  }
+}
+.comment3{
+  width: 570px;
+  height: 850px;
+  background: #f5f5f5;
+  border-radius: 20px;
+  color: #000;
+  position: relative;
+  top: -1700px;
+}
+.text39{
+  font-size: 47px;
+  line-height: 54px;
+  font-weight: 500;
+  font-family: 'Duplicate Sanss';
+  width: 400px;
+  position: relative;
+  top: 60px;
+  left: 60px;
+  text-align: left;
+}
+.comment4{
+  width: 570px;
+  height: 850px;
+  background: #f5f5f5;
+  border-radius: 20px;
+  color: #000;
+  position: relative;
+  top: -2550px;
+  right: -580px;
+}
+.text40{
+  font-size: 47px;
+  line-height: 54px;
+  font-weight: 500;
+  font-family: 'Duplicate Sanss';
+  width: 400px;
+  position: relative;
+  top: 60px;
+  left: 60px;
+  text-align: left;
+}
+.page3{
+  width: 100%;
+  height: 100vh;
+}
+.contect{
+  width: 100%;
+  height: 1350px;
+  position: absolute;
+top: 5500px;
+  left: 0;
+}
+.img7{
+  width: 100%;
+  height: 1350px;
+  position: absolute;
+  top: 5500px;
+  left: 0;
+}
+.text41{
+  font-size: 68px;
+  line-height: 74px;
+  font-weight: 500;
+  font-family: 'Duplicate Sanss';
+  width: 500px;
+  position: relative;
+  top: 1050px;
+  left: 150px;
+  text-align: left;
+  color: white;
+}
+.content1{
+width: 1150px;
+height: 560px;
+position: relative;
+top: 1131px;
+left: 150px;
+background-color: white;
+border-radius: 20px;
+}
+.content1logo{
+  position: relative;
+top: 80px;
+left: 60px;
+}
+.text42{
+  font-size: 68px;
+  line-height: 74px;
+  font-weight: 500;
+  font-family: 'Duplicate Sanss';
+  width: 500px;
+  position: relative;
+  top: 100px;
+  left: 60px;
+  text-align: left;
+}
+.img8{
+  position: relative;
+  left: 590px;
+  top: -144px;
+}
+.text43{
+  position: relative;
+  top: 110px;
+  left: 60px;
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 400;
+  font-family: "DM Sans";
+  width: 550px;
+  color: #0055ba;
+}
+.nce{
+  position: relative;
+  top: 7px;
+}
+
+.content2{
+  width: 340px;
+height: 360px;
+position: relative;
+top: 1151px;
+left: 150px;
+background-color: white;
+border-radius: 20px;
+}
+.content2logo{
+  position: relative;
+  top: 60px;
+  left: 60px;
+  border-radius: 0%;
+}
+.text44{
+  font-size: 36px;
+  line-height: 45px;
+  font-weight: 500;
+  font-family: 'Duplicate Sanss';
+  width: 250px;
+  position: relative;
+  top: 65px;
+  left: 60px;
+  text-align: left;
+}
+.text45{
+  position: relative;
+  top: 75px;
+  left: 60px;
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 400;
+  font-family: "DM Sans";
+  width: 550px;
+  color: #0055ba;
+}
+.content3{
+  width: 340px;
+height: 360px;
+position: relative;
+top: 795px;
+left: 550px;
+background-color: white;
+border-radius: 20px;
+}
+.contect3logo{
+  position: relative;
+  top: 60px;
+  left: 60px;
+  border-radius: 0%;
+}
+.text46{
+  font-size: 36px;
+  line-height: 45px;
+  font-weight: 500;
+  font-family: 'Duplicate Sanss';
+  width: 250px;
+  position: relative;
+  top: 65px;
+  left: 60px;
+  text-align: left;
+}
+.text47{
+  position: relative;
+  top: 75px;
+  left: 60px;
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 400;
+  font-family: "DM Sans";
+  width: 550px;
+  color: #0055ba;
+}
+.content4{
+  width: 340px;
+height: 360px;
+position: relative;
+top: 435px;
+left: 930px;
+background-color: white;
+border-radius: 20px;
+}
+.content4logo{
+  position: relative;
+  top: 60px;
+  left: 60px;
+  border-radius: 0%;
+}
+.text48{
+  font-size: 36px;
+  line-height: 45px;
+  font-weight: 500;
+  font-family: 'Duplicate Sanss';
+  width: 250px;
+  position: relative;
+  top: 65px;
+  left: 60px;
+  text-align: left;
+}
+.text49{
+  position: relative;
+  top: 75px;
+  left: 60px;
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 400;
+  font-family: "DM Sans";
+  width: 550px;
+  color: #0055ba;
+}
+.footer{
+  width: 100%;
+  height: 1150px;
+  background: black;
+  position: relative;
+  top:1520px;
+}
+.text50{
+  font-size: 70px;
+  line-height: 74px;
+  font-weight: 500;
+  font-family: 'Duplicate Sanss';
+  width: 1150;
+  position: relative;
+  top: 170px;
+  left: 50px;
+  text-align: center;
+  color: white;
+
+}
+.text51{
+  position: relative;
+  top: 190px;
+  left: 380px;
+  font-size: 28px;
+  line-height: 36px;
+  font-weight: 400;
+  font-family: "DM Sans";
+  width: 700px;
+ color: white;
+ text-align: center;
+}
+.btn12{
+  width: 205px;
+  height: 55px;
+  border-radius: 10px;
+  border: none;
+  position: relative;
+  top: 250px;
+  left: 520px;
+  line-height: 30px;
+  font-family: "DM Sans";
+  font-size: 18px;
+  background: #0055ba;
+  color: white;
+  }
+  .btn13{
+    width: 205px;
+    height: 55px;
+    border-radius: 10px;
+    border: none;
+    position: relative;
+    top: 250px;
+    left: 530px;
+    line-height: 30px;
+    font-family: "DM Sans";
+    font-size: 18px;
+    background: #202020;
+    color: white;
+    }
+    .ncic{
+      position: relative;
+      top: 5px;
+    }
+    .hr{
+      width: 1150px;
+      height: 2px;
+      position: relative;
+      left: 170px;
+      top: 300px;
+      background: #202020;
+      border: none;
+    }
+    .hr1{
+      width: 1150px;
+      height: 2px;
+      position: relative;
+      left: 170px;
+      top:-520px;
+      background: #202020;
+      border: none;
+    }
+    .text52{
+      color: #2c2c2c;
+      position: relative;
+      top: 350px;
+      left: 170px;
+      line-height: 30px;
+      font-family: "DM Sans";
+      font-size: 18px;
+    }
+    .text53{
+      color: white;
+      position: relative;
+      top: 360px;
+      left: 170px;
+      line-height: 45px;
+      font-family: "DM Sans";
+      font-size: 18px;
+      font-weight: 300;
+    }
+    .text54{
+      color: #2c2c2c;
+      position: relative;
+      top: -85px;
+      left: 500px;
+      line-height: 30px;
+      font-family: "DM Sans";
+      font-size: 18px;
+    }
+    .text55{
+      color: white;
+      position: relative;
+      top: -70px;
+      left: 500px;
+      line-height: 45px;
+      font-family: "DM Sans";
+      font-size: 18px;
+      font-weight: 300;
+    }
+    .text56{
+      color: #2c2c2c;
+      position: relative;
+      top: -430px;
+      left: 800px;
+      line-height: 30px;
+      font-family: "DM Sans";
+      font-size: 18px;
+    }
+    .text57{
+      color: white;
+      position: relative;
+      top: -415px;
+      left: 800px;
+      line-height: 45px;
+      font-family: "DM Sans";
+      font-size: 18px;
+      font-weight: 300;
+    }
+    .text58{
+      color: #2c2c2c;
+      position: relative;
+      top: -735px;
+      left: 1100px;
+      line-height: 30px;
+      font-family: "DM Sans";
+      font-size: 18px;
+    }
+    .text59{
+      color: white;
+      position: relative;
+      top: -720px;
+      left: 1100px;
+      line-height: 45px;
+      font-family: "DM Sans";
+      font-size: 18px;
+      font-weight: 300;
+    }
+    .f1{
+      position: relative;
+      top:-250px;
+  left: 640px;
+    }
+    .f2{
+      position: relative;
+      top:-195px;
+  left: 640px;
+    }
+    .f3{
+      position: relative;
+      top:-195px;
+  left: 640px;
+    }
+    
+    /* styles.css */
+/* styles.css */
+body {
+  cursor: none; /* Hide the default cursor */
+}
+
+.circle {
+  height: 24px;
+  width: 24px;
+  border-radius: 24px;
+  background-color: black;
+  position: fixed; 
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 99999999; /* so that it stays on top of all other elements */
+}
+.img5{
+  position: relative;
+  top: 20px;
+  left: 40px;
+}
+
+
+.loader
+{
+    position: relative;
+    top: -6050px;
+    left: 950px;
+    width: 300px;
+    height: 300px;
+    transform-style: preserve-3d;
+    transform: perspective(500px) rotateX(60deg);
+}
+.loader span
+{
+    position: absolute;
+    display: block;
+    border: 5px solid black;
+    box-shadow: 0 5px 0 #3a3a3a,
+                inset 0 5px 0 #414040;
+    box-sizing: border-box;
+    border-radius: 50%;
+    animation: animate 3s ease-in-out infinite;            
+}
+@keyframes animate
+{
+    0%,100%
+    {
+        transform: translateZ(-100px);
+    }
+    50%
+    {
+        transform: translateZ(100px);
+    }
+}
+.loader span:nth-child(1)
+{
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    animation-delay: 1.7s;
+}
+.loader span:nth-child(2)
+{
+    top: 10px;
+    left: 10px;
+    bottom: 10px;
+    right: 10px;
+    animation-delay: 1.6s;
+}
+.loader span:nth-child(3)
+{
+    top: 20px;
+    left: 20px;
+    bottom: 20px;
+    right: 20px;
+    animation-delay: 1.5s;
+}
+.loader span:nth-child(4)
+{
+    top: 30px;
+    left: 30px;
+    bottom: 30px;
+    right: 30px;
+    animation-delay: 1.4s;
+}
+.loader span:nth-child(5)
+{
+    top: 40px;
+    left: 40px;
+    bottom: 40px;
+    right: 40px;
+    animation-delay: 1.3s;
+}
+.loader span:nth-child(6)
+{
+    top: 50px;
+    left: 50px;
+    bottom: 50px;
+    right: 50px;
+    animation-delay: 1.2s;
+}
+.loader span:nth-child(7)
+{
+    top: 60px;
+    left: 60px;
+    bottom: 60;
+    right: 60px;
+    animation-delay: 1.1s;
+}
+.loader span:nth-child(8)
+{
+    top: 70px;
+    left: 70px;
+    bottom: 70px;
+    right: 70px;
+    animation-delay: 1s;
+}
+.loader span:nth-child(9)
+{
+    top: 80px;
+    left: 80px;
+    bottom: 80px;
+    right: 80px;
+    animation-delay: 0.9s;
+}
+.loader span:nth-child(10)
+{
+    top: 90px;
+    left: 90px;
+    bottom: 90px;
+    right: 90px;
+    animation-delay: 0.8s;
+}
+.loader span:nth-child(11)
+{
+    top: 100px;
+    left: 100px;
+    bottom: 100px;
+    right: 100px;
+    animation-delay: 0.7s;
+}
+.loader span:nth-child(12)
+{
+    top: 110px;
+    left: 110px;
+    bottom: 110px;
+    right: 110px;
+    animation-delay: 0.6s;
+}
+.loader span:nth-child(13)
+{
+    top: 120px;
+    left: 120px;
+    bottom: 120px;
+    right: 120px;
+    animation-delay: 0.5s;
+}
+.loader span:nth-child(14)
+{
+    top: 130px;
+    left: 130px;
+    bottom: 130px;
+    right: 130px;
+    animation-delay: 0.4s;
+}
+.loader span:nth-child(15)
+{
+    top: 140px;
+    left: 140px;
+    bottom: 140px;
+    right: 140px;
+    animation-delay: 0.3s;
+}
+.loader span:nth-child(16)
+{
+    top: 150px;
+    left: 150px;
+    bottom: 150px;
+    right: 150px;
+    animation-delay: 0.2s;
+}
+.loader span:nth-child(17)
+{
+    top: 160px;
+    left: 160px;
+    bottom: 160px;
+    right: 160px;
+    animation-delay: 0.1s;
+}
+.loader span:nth-child(18)
+{
+    top: 170px;
+    left: 170px;
+    bottom: 170px;
+    right: 170px;
+    animation-delay: 0s;
+}
+@media (max-width: 768px) {
+  body{
+    overflow-x: hidden;
+}
+  
+  #popup-button{
+    width: 60px;
+    height: 60px;
+    cursor:pointer;
+    position: relative;
+    left:650px;
+    top: -180px;
+    opacity: 1;
+}
+.popup-menu {
+    display: none; /* Hide the menu by default */
+    background-color:#202020;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    position: absolute;
+    left:250px;
+    top: 80px;
+    z-index: 1000;
+    color:white;
+    width: 500px;
+    height: 500px;
+    border-radius: 20px;
+    opacity: 1;
+  }
+  
+  .popup-menu a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #bab5b5;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+    font-size: 40px;
+    line-height: 56px;
+font-family:"DM Sans";
+font-style: normal;
+font-weight: 400;
+    opacity: 1;
+  }
+  header{
+    width: 100%;
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.459);
+    backdrop-filter: blur(2px);
+    position: fixed;
+    z-index: 9999999;
+}
+.logo{
+    position: relative;
+    left: 60px;
+    bottom:20px;
+    width: 152px;
+    height: 152px;
+    object-fit: contain;
+}
+ul{
+    width: 90%;
+    opacity: 0;
+}
+ul li{
+    display: inline-block;
+    margin-left: 2%;
+    transform: all 0.5s ease;
+    position: relative;
+    bottom:115px;
+    left: 500px;
+    opacity: 0;
+  
+}
+
+ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 23px;
+font-family:"DM Sans";
+font-style: normal;
+font-weight: 500;
+opacity: 0;
+} 
+
+  .monow{
+    width: 300px;
+    height: 45px;
+    position: relative;
+    top: 220px;
+    left: 60px;
+background:#f5f5f5; 
+border-radius: 25px;
+}
+.text1 a{
+    color: black;
+    font-size: 15px;
+    font-family:"DM Sans";
+font-weight: 500;
+text-decoration: none;
+text-align: center;
+position: relative;
+bottom: 15px;
+left: 73px;
+}
+.btn2{
+    background: #0055ba;
+width: 55px;
+height: 25px;
+font-size: 13px;
+line-height: 25px;
+font-family:"DM Sans";
+font-style: normal;
+font-weight: 400;
+text-align: center;
+position: relative;
+top: 13px;
+left: 12px;
+border-radius: 20px;
+color: white;
+}
+.svg2{
+    position: relative;
+    top: -38px;
+    left: 279px; 
+    width: 20px;
+}
+.svg2:hover{
+    position: relative;
+    top: -40px;
+    left: 285px; 
+    width: 20px;
+}
+.text2{
+    font-size: 70px;
+    line-height: 85px;
+    font-weight: 500;
+    font-family: 'Duplicate Sanss';
+    width: 500px;
+    position: relative;
+    top: 270px;
+    left: 60px;
+    text-align: left;
+}
+.text3{
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 400;
+    font-family: "DM Sans";
+    width: 480px;
+    position: relative;
+    top: 300px;
+    left: 60px;
+}
+@font-face {
+    font-family: 'Duplicate Sanss';
+    src: url('DuplicateSans-Medium.eot');
+    src: local('Duplicate Sans Medium'), local('DuplicateSans-Medium'),
+        url('DuplicateSans-Medium.eot?#iefix') format('embedded-opentype'),
+        url('DuplicateSans-Medium.woff2') format('woff2'),
+        url('DuplicateSans-Medium.woff') format('woff'),
+        url('DuplicateSans-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+.btn3{
+width: 205px;
+height: 55px;
+border-radius: 10px;
+border: none;
+position: relative;
+top: 345px;
+left: 60px;
+line-height: 30px;
+font-family: "DM Sans";
+font-size: 18px;
+background: #0055ba;
+color: white;
+}
+.nc-icon-wrappers{
+    position: relative;
+    top: 5px;
+    width: 15px;
+}
+.btn4{
+    width: 164px;
+    height: 55px;
+    border-radius: 10px;
+    border: none;
+    position: relative;
+    top: 345px;
+    left: 85px;
+    line-height: 28px;
+    font-family: "DM Sans";
+    font-size: 18px;
+    background: #f5f5f5;
+    color: black;
+    }
+    .text4{
+        font-size: 15px;
+        line-height: 23px;
+        font-weight: 500;
+        font-family: "DM Sans";
+        width: 680px;
+        position: relative;
+        top: 450px;
+        left: 60px;
+        color:#606060;
+    }
+  .trusted{
+    width: 730px;
+    height: 30px;
+        position: relative;
+        top: 550px;
+        left: 60px; 
+  }
+  .logo1{
+    width: 150px;
+  }
+  .logo2{
+    width: 120px;
+    position: relative;
+    top: -10px;
+    left: 135px; 
+  }
+  .logo3{
+    width: 190px;
+    position: relative;
+    left: 240px; 
+  }
+  .logo4{
+    width: 190px;
+    position: relative;
+    top: 70px;
+    left: -480px; 
+  }
+  .text5{
+    font-size: 50px;
+    line-height: 55px;
+    font-weight: 500;
+    font-family: 'Duplicate Sanss';
+    width: 600px;
+    position: relative;
+    top: 730px;
+    left: 60px;
+    text-align: left; 
+  }
+  .text6{
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 400;
+    font-family: "DM Sans";
+    width: 500px;
+    position: relative;
+    top: 750px;
+    left: 60px;
+  }
+  .connect{
+    width: 690px;
+    height: 450px;
+    position: relative;
+    top: 800px;
+    left: 60px;
+  }
+  .connectimg{
+    width: 690px;
+    height: 450px;
+border-radius: 20px;
+  }
+  .connectlogo{
+    width: 60px;
+    position: relative;
+    top: -420px;
+    left: 50px;
+
+  }
+  .text7{
+    font-size: 52px;
+    line-height: 45px;
+    font-weight: 500;
+    font-family: 'Duplicate Sanss';
+    width: 600px;
+    position: relative;
+    top: -400px;
+    left: 60px;
+    text-align: left; 
+    color: white;
+  }
+  .text8{
+    font-size: 22px;
+    line-height: 25px;
+    font-weight: 400;
+    font-family: "DM Sans";
+    width: 500px;
+    position: relative;
+    top: -360px;
+    left: 60px;
+    color: white;
+  }
+  .btn5{
+    width: 210px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    position: relative;
+    top: -330px;
+    left: 60px;
+    line-height: 30px;
+    font-family: "DM Sans";
+    font-size: 18px;
+    background: white;
+    color: #1462bf;
+  }
+  
+  .DirectPay{
+    width: 315px;
+    height: 771px;
+    position: relative;
+    top: 830px;
+    left: 60px;
+  }
+  .DirectPayimg{
+    width: 340px;
+    height: 771px;
+border-radius: 20px;
+  }
+  .DirectPaylogo{
+    width: 60px;
+    position: relative;
+    top: -670px;
+    left: 50px;
+
+  }
+  .text9{
+    font-size: 54px;
+    line-height: 45px;
+    font-weight: 500;
+    font-family: 'Duplicate Sanss';
+    width: 600px;
+    position: relative;
+    top: -650px;
+    left: 60px;
+    text-align: left; 
+  }
+  .text10{
+    font-size: 16px;
+    line-height: 23px;
+    font-weight: 400;
+    font-family: "DM Sans";
+    width: 255px;
+    position: relative;
+    top: -610px;
+    left: 60px;
+  }
+  .btn6{
+    width: 210px;
+    height: 55px;
+    border-radius: 10px;
+    border: none;
+    position: relative;
+    top: -585px;
+    left: 60px;
+    line-height: 35px;
+    font-family: "DM Sans";
+    font-size: 18px;
+    color: white;
+    background: #1462bf;
+  }
+  .text11{
+    font-size: 18px;
+    line-height: 23px;
+    font-weight: 500;
+    font-family: "DM Sans";
+    width: 360px;
+    position: relative;
+    top: -555px;
+    left: 70px;
+  }
+  .img2{
+    width: 140px;
+    position: relative;
+    top: -550px;
+    left: 60px;
+  }
+  .Percept{
+    width: 340px;
+    height: 771px;
+    position: relative;
+    top: 60px;
+    left: 420px;
+  }
+  .Perceptimg{
+    width: 340px;
+    height: 771px;
+border-radius: 20px;
+  }
+  .Perceptlogo{
+    width: 40px;
+    position: relative;
+    top: -660px;
+    left: 50px;
+z-index: 99999;
+  }
+  .text12{
+    font-size: 54px;
+    line-height: 45px;
+    font-weight: 500;
+    font-family: 'Duplicate Sanss';
+    width: 600px;
+    position: relative;
+    top: -650px;
+    left: 60px;
+    text-align: left; 
+    color: white;
+  }
+  .text13{
+    font-size: 16px;
+    line-height: 23px;
+    font-weight: 400;
+    font-family: "DM Sans";
+    width: 255px;
+    position: relative;
+    top: -610px;
+    left: 60px;
+    color: white;
+  }
+  .btn7{
+    width: 180px;
+    height: 55px;
+    border-radius: 10px;
+    border: none;
+    position: relative;
+    top: -585px;
+    left: 60px;
+    line-height: 40px;
+    font-family: "DM Sans";
+    font-size: 18px;
+    color: white;
+background: #202020;
+  }
+  .bts{
+    position: relative;
+    top: 2px; 
+    left: 2px;
+  }
+  .text14{
+    position: relative;
+    top: 200px;
+    left: 60px;
+    font-size: 55px;
+    line-height: 55px;
+    font-weight: 500;
+    font-family: 'Duplicate Sanss';
+    width: 600px;
+    text-align: left; 
+  }
+  .text15{
+    position: relative;
+    top: 220px;
+    left: 60px;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 400;
+    font-family: "DM Sans";
+    width: 500px;
+  }
+  .slider {
+    display: flex;
+   position:relative;
+ top: 300px;
+  left: 60px;
+    width: 670px;
+    height:1150px; 
+    overflow: hidden;
+    border-radius:20px;
+  }
+  .slide {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+   top:0px;
+    right: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    background:#f5f5f5;
+    color: black;
+  }
+  
+  .slide.active {
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+     right: 0;
+  }
+  .btn8{
+    position: relative;
+    top: 60px;
+    left: 60px;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 500;
+    font-family: "DM Sans";
+    width: 95px;
+    height: 55px;
+    background: black;
+    color: white;
+    text-align: center;
+    border-radius: 50px;
+  }
+  .text17{
+    position: relative;
+    top: 13px;
+    left: 230px;
+    font-size: 22px;
+    line-height: 28px;
+    font-weight: 500;
+    font-family: "DM Sans";
+  }
+  .text18{
+    position: relative;
+    top: -13px;
+    left: 530px;
+    font-size: 22px;
+    line-height: 28px;
+    font-weight: 500;
+    font-family: "DM Sans";
+  }
+  .text19{
+    position: relative;
+    top: -42px;
+    left: 800px;
+    font-size: 22px;
+    line-height: 28px;
+    font-weight: 500;
+    font-family: "DM Sans";
+  }
+  
+  .text20{
+    position: relative;
+    top: 78px;
+    left: 60px;
+    font-size: 22px;
+    line-height: 28px;
+    font-weight: 500;
+    font-family: "DM Sans";
+  }
+  .btn9{
+    position: relative;
+    top: 32px;
+    left: 200px;
+    font-size: 22px;
+    line-height: 28px;
+    font-weight: 500;
+    font-family: "DM Sans";
+    width: 300px;
+    height: 60px;
+    background: black;
+    color: white;
+    text-align: center;
+    border-radius: 50px;
+  }
+  .text22{
+    position: relative;
+    top: -10px;
+    left: 530px;
+    font-size: 22px;
+    line-height: 28px;
+    font-weight: 500;
+    font-family: "DM Sans";
+  }
+  .text23{
+    position: relative;
+    top: -39px;
+    left: 800px;
+    font-size: 22px;
+    line-height: 28px;
+    font-weight: 500;
+    font-family: "DM Sans";
+  }
+    
+  .text24{
+    position: relative;
+    top: 78px;
+    left: 60px;
+    font-size: 22px;
+    line-height: 28px;
+    font-weight: 500;
+    font-family: "DM Sans";
+  }
+  .text25{
+    position: relative;
+    top: 52px;
+    left: 200px;
+    font-size: 22px;
+    line-height: 28px;
+    font-weight: 500;
+    font-family: "DM Sans";
+  
+  }
+  .btn10{
+    position: relative;
+    top: 6px;
+    left: 470px;
+    font-size: 22px;
+    line-height: 28px;
+    font-weight: 500;
+    font-family: "DM Sans";
+    width: 300px;
+    height: 60px;
+    background: black;
+    color: white;
+    text-align: center;
+    border-radius: 50px;
+  }
+  .text27{
+    position: relative;
+    top: -39px;
+    left: 800px;
+    font-size: 22px;
+    line-height: 28px;
+    font-weight: 500;
+    font-family: "DM Sans";
+  }
+  .text28{
+    position: relative;
+    top: 78px;
+    left: 60px;
+    font-size: 22px;
+    line-height: 28px;
+    font-weight: 500;
+    font-family: "DM Sans";
+  }
+  .text29{
+    position: relative;
+    top: 52px;
+    left: 200px;
+    font-size: 22px;
+    line-height: 28px;
+    font-weight: 500;
+    font-family: "DM Sans";
+  
+  }
+  .text30{
+    position: relative;
+    top: 22px;
+    left: 500px;
+    font-size: 22px;
+    line-height: 28px;
+    font-weight: 500;
+    font-family: "DM Sans";
+
+  }
+  .btn11{
+    position: relative;
+    top: -19px;
+    left: 770px;
+    font-size: 22px;
+    line-height: 28px;
+    font-weight: 500;
+    font-family: "DM Sans";
+    width: 300px;
+    height: 60px;
+    background: black;
+    color: white;
+    text-align: center;
+    border-radius: 50px;
+  }
+  .text31{
+    position: relative;
+    top: 100px;
+    left: 60px;
+    font-size: 50px;
+    line-height: 56px;
+    font-weight: 300;
+    font-family: 'Duplicate Sanss';
+    width: 500px;
+    text-align: left;
+  }
+  .text32{
+    position: relative;
+    top: 120px;
+    left: 60px;
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 400;
+    font-family: "DM Sans";
+    color: #696969;
+    width: 550px;
+  }
+  .text33{
+    position: relative;
+    top: 150px;
+    left: 60px;
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 400;
+    font-family: "DM Sans";
+    color: #696969;
+    width: 550px;
+  }
+  .text34{
+    position: relative;
+    top: 165px;
+    left: 60px;
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 400;
+    font-family: "DM Sans";
+    color: #1462bf;
+    width: 550px;
+  }
+  .nc{
+    position: relative;
+    top: 5px;
+  }
+  .img4{
+    position: relative;
+    top:200px;
+left: 150px;
+  }
+  .img5l{
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    background: white;
+    box-shadow: 0 0 10 black;
+    position: relative;
+    top:-790px;
+    left: 940px;
+    z-index: 99999;
+    box-shadow: 
+               0 0 10px #6060607e;
+  }
+  .text35{
+    font-size: 54px;
+    line-height: 55px;
+    font-weight: 500;
+    font-family: 'Duplicate Sanss';
+    width: 550px;
+    position: relative;
+    top: 440px;
+    left: 60px;
+    text-align: left;
+  }
+  .text36{
+    position: relative;
+    top: 480px;
+    left: 60px;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 400;
+    font-family: "DM Sans";
+    width: 550px;
+  }
+
+.comment{
+  width: 670px;
+  height: 571px;
+  position: relative;
+  top: 680px;
+  left: 60px;
+}
+.comment1{
+  width: 340px;
+  height: 551px;
+  background: #f5f5f5;
+  border-radius: 20px;
+  color: #000;
+  animation: cude 20s ease-in-out infinite;
+  z-index: 999999;
+  transition: 0.5s ease-in-out;
+  position: relative;
+  top: -150px;
+}
+@keyframes cude {
+  0%{
+    opacity: 1;
+  }
+  50%{
+    opacity: 0;
+    color: #0000007c;
+  }
+  
+  70%{
+    opacity: 0;
+    color: #00000000;
+  }
+  100%{
+    opacity: 1;
+    color: #000;
+  }
+}
+.text37{
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: 500;
+  font-family: 'Duplicate Sanss';
+  width: 250px;
+  position: relative;
+  top: 60px;
+  left: 60px;
+  text-align: left;
+}
+.comment2{
+  width: 340px;
+  height: 551px;
+  background: #f5f5f5;
+  border-radius: 20px;
+  color: #000;
+  position: relative;
+  top: -700px;
+  right: -350px;
+  animation:  cud 20s ease-in-out infinite;
+  z-index: 999999;
+  transition: 0.5s ease-in-out;
+}
+.text38{
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: 500;
+  font-family: 'Duplicate Sanss';
+  width: 250px;
+  position: relative;
+  top: 60px;
+  left: 60px;
+  text-align: left;
+}
+@keyframes cud {
+  0%{
+    opacity: 1;
+  }
+  50%{
+    opacity: 0;
+    color: #0000007c;
+  }
+  
+  60%{
+    opacity: 0;
+    color: #00000011;
+  }
+  70%{
+    opacity: 0;
+    color: #00000000;
+  }
+  100%{
+    opacity: 1;
+    color: #000;
+  }
+}
+.comment3{
+  width: 340px;
+  height: 571px;
+  background: #f5f5f5;
+  border-radius: 20px;
+  color: #000;
+  position: relative;
+  top: -1250px;
+}
+.text39{
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: 500;
+  font-family: 'Duplicate Sanss';
+  width: 250px;
+  position: relative;
+  top: 60px;
+  left: 60px;
+  text-align: left;
+}
+.comment4{
+  width: 340px;
+  height: 571px;
+  background: #f5f5f5;
+  border-radius: 20px;
+  color: #000;
+  position: relative;
+  top: -1820px;
+  right: -350px;
+}
+.text40{
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: 500;
+  font-family: 'Duplicate Sanss';
+  width: 250px;
+  position: relative;
+  top: 60px;
+  left: 60px;
+  text-align: left;
+}
+.page3{
+  width: 100%;
+  height: 100vh;
+}
+.contect{
+  width: 100%;
+  height: 1350px;
+  position: absolute;
+top: 5300px;
+  left: 0;
+}
+.img7{
+  width: 100%;
+  height: 1350px;
+  position: absolute;
+  top: 5300px;
+  left: 0;
+}
+.text41{
+  font-size: 48px;
+  line-height: 55px;
+  font-weight: 500;
+  font-family: 'Duplicate Sanss';
+  width: 500px;
+  position: relative;
+  top: 850px;
+  left: 60px;
+  text-align: left;
+  color: white;
+}
+.content1{
+width: 650px;
+height: 750px;
+position: relative;
+top: 900px;
+left: 60px;
+background-color: white;
+border-radius: 20px;
+align-items: center;
+}
+.content1logo{
+  position: relative;
+top: 60px;
+left: 280px;
+width: 70px;
+}
+.text42{
+  font-size: 36px;
+  line-height: 41px;
+  font-weight: 500;
+  font-family: 'Duplicate Sanss';
+  width: 500px;
+  position: relative;
+  top: 90px;
+  left: 60px;
+  text-align: center;
+}
+.img8{
+  position: relative;
+  left: 60px;
+  top:185px;
+}
+.text43{
+  position: relative;
+  top: 110px;
+  left: 0px;
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 400;
+  font-family: "DM Sans";
+  width: 650px;
+  color: #0055ba;
+  text-align: center;
+}
+.nce{
+  position: relative;
+  top: 7px;
+}
+
+.content2{
+  width: 200px;
+height: 310px;
+position: relative;
+top: 930px;
+left: 60px;
+background-color: white;
+border-radius: 20px;
+}
+.content2logo{
+  position: relative;
+  top: 40px;
+  left: 70px;
+  border-radius: 0%;
+}
+.text44{
+  font-size: 30px;
+  line-height: 38px;
+  font-weight: 500;
+  font-family: 'Duplicate Sanss';
+  width: 200px;
+  position: relative;
+  top: 60px;
+  left: -2px;
+  text-align: center;
+}
+.text45{
+  position: relative;
+  top: 75px;
+  left: 20px;
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 400;
+  font-family: "DM Sans";
+  width: 550px;
+  color: #0055ba;
+}
+.content3{
+  width: 200px;
+height: 310px;
+position: relative;
+top: 620px;
+left: 280px;
+background-color: white;
+border-radius: 20px;
+}
+.contect3logo{
+  position: relative;
+  top: 40px;
+  left: 70px;
+  border-radius: 0%;
+}
+.text46{
+  font-size: 30px;
+  line-height: 38px;
+  font-weight: 500;
+  font-family: 'Duplicate Sanss';
+  width: 200px;
+  position: relative;
+  top: 65px;
+  left: -2px;
+  text-align: center;
+}
+.text47{
+  position: relative;
+  top: 75px;
+  left: 45px;
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 400;
+  font-family: "DM Sans";
+  width: 550px;
+  color: #0055ba;
+}
+.content4{
+  width: 200px;
+height: 310px;
+position: relative;
+top: 310px;
+left: 500px;
+background-color: white;
+border-radius: 20px;
+}
+.content4logo{
+  position: relative;
+  top: 40px;
+  left: 70px;
+  border-radius: 0%;
+}
+.text48{
+  font-size: 30px;
+  line-height: 38px;
+  font-weight: 500;
+  font-family: 'Duplicate Sanss';
+  width: 200px;
+  position: relative;
+  top: 65px;
+  left: -2px;
+  text-align: center;
+}
+.text49{
+  position: relative;
+  top: 75px;
+  left: 15px;
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 400;
+  font-family: "DM Sans";
+  width: 550px;
+  color: #0055ba;
+}
+.footer{
+  width: 100%;
+  height: 1150px;
+  background: black;
+  position: relative;
+  top:1060px;
+}
+.text50{
+  font-size: 48px;
+  line-height: 55px;
+  font-weight: 500;
+  font-family: 'Duplicate Sanss';
+  width: 1150;
+  position: relative;
+  top: 170px;
+  text-align: center;
+  color: white;
+
+}
+.text51{
+  position: relative;
+  top: 170px;
+  left: 155px;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 400;
+  font-family: "DM Sans";
+  width: 450px;
+ color: white;
+ text-align: center;
+}
+.btn12{
+  width: 205px;
+  height: 55px;
+  border-radius: 10px;
+  border: none;
+  position: relative;
+  top: 210px;
+  left: 160px;
+  line-height: 30px;
+  font-family: "DM Sans";
+  font-size: 18px;
+  background: #0055ba;
+  color: white;
+  }
+  .btn13{
+    width: 205px;
+    height: 55px;
+    border-radius: 10px;
+    border: none;
+    position: relative;
+    top: 210px;
+    left: 170px;
+    line-height: 30px;
+    font-family: "DM Sans";
+    font-size: 18px;
+    background: #202020;
+    color: white;
+    }
+    .ncic{
+      position: relative;
+      top: 5px;
+    }
+    .hr{
+      width: 650px;
+      height: 2px;
+      position: relative;
+      left: 60px;
+      top: 300px;
+      background: #202020;
+      border: none;
+    }
+    .hr1{
+      width: 650px;
+      height: 2px;
+      position: relative;
+      left: 60px;
+      top:-350px;
+      background: #202020;
+      border: none;
+    }
+    .text52{
+      color: #2c2c2c;
+      position: relative;
+      top: 350px;
+      left: 60px;
+      line-height: 35px;
+      font-family: "DM Sans";
+      font-size: 18px;
+    }
+    .text53{
+      color: white;
+      position: relative;
+      top: 360px;
+      left: 60px;
+      line-height: 35px;
+      font-family: "DM Sans";
+      font-size: 18px;
+      font-weight: 300;
+    }
+    .text54{
+      color: #2c2c2c;
+      position: relative;
+      top: 0px;
+      left: 280px;
+      line-height: 35px;
+      font-family: "DM Sans";
+      font-size: 18px;
+    }
+    .text55{
+      color: white;
+      position: relative;
+      top: 10px;
+      left: 280px;
+      line-height: 35px;
+      font-family: "DM Sans";
+      font-size: 18px;
+      font-weight: 300;
+    }
+    .text56{
+      color: #2c2c2c;
+      position: relative;
+      top: -280px;
+      left: 480px;
+      line-height: 35px;
+      font-family: "DM Sans";
+      font-size: 18px;
+    }
+    .text57{
+      color: white;
+      position: relative;
+      top: -270px;
+      left: 480px;
+      line-height: 35px;
+      font-family: "DM Sans";
+      font-size: 18px;
+      font-weight: 300;
+    }
+    .text58{
+      color: #2c2c2c;
+      position: relative;
+      top: -520px;
+      left: 630px;
+      line-height: 35px;
+      font-family: "DM Sans";
+      font-size: 18px;
+    }
+    .text59{
+      color: white;
+      position: relative;
+      top: -510px;
+      left: 630px;
+      line-height: 35px;
+      font-family: "DM Sans";
+      font-size: 18px;
+      font-weight: 300;
+    }
+    .f1{
+  position: relative;
+  top:200px;
+left: 150px;
+    }
+    .f2{
+
+  position: relative;
+  top:200px;
+left: 150px;
+    }
+    .f3{
+
+  position: relative;
+  top:200px;
+left: 150px;
+    }
+    
+    /* styles.css */
+/* styles.css */
+
+.img5{
+  position: relative;
+  top: 20px;
+  left: 40px;
+}
+
+
+.loader
+{
+    position: relative;
+    top: -6500px;
+    left: 500px;
+    width: 250px;
+    height: 250px;
+    transform-style: preserve-3d;
+    transform: perspective(500px) rotateX(60deg);
+}
+.loader span
+{
+    position: absolute;
+    display: block;
+    border: 5px solid black;
+    box-shadow: 0 5px 0 #3a3a3a,
+                inset 0 5px 0 #414040;
+    box-sizing: border-box;
+    border-radius: 50%;
+    animation: animate 3s ease-in-out infinite;            
+}
+@keyframes animate
+{
+    0%,100%
+    {
+        transform: translateZ(-100px);
+    }
+    50%
+    {
+        transform: translateZ(100px);
+    }
+}
+.loader span:nth-child(1)
+{
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    animation-delay: 1.7s;
+}
+.loader span:nth-child(2)
+{
+    top: 10px;
+    left: 10px;
+    bottom: 10px;
+    right: 10px;
+    animation-delay: 1.6s;
+}
+.loader span:nth-child(3)
+{
+    top: 20px;
+    left: 20px;
+    bottom: 20px;
+    right: 20px;
+    animation-delay: 1.5s;
+}
+.loader span:nth-child(4)
+{
+    top: 30px;
+    left: 30px;
+    bottom: 30px;
+    right: 30px;
+    animation-delay: 1.4s;
+}
+.loader span:nth-child(5)
+{
+    top: 40px;
+    left: 40px;
+    bottom: 40px;
+    right: 40px;
+    animation-delay: 1.3s;
+}
+.loader span:nth-child(6)
+{
+    top: 50px;
+    left: 50px;
+    bottom: 50px;
+    right: 50px;
+    animation-delay: 1.2s;
+}
+.loader span:nth-child(7)
+{
+    top: 60px;
+    left: 60px;
+    bottom: 60;
+    right: 60px;
+    animation-delay: 1.1s;
+}
+.loader span:nth-child(8)
+{
+    top: 70px;
+    left: 70px;
+    bottom: 70px;
+    right: 70px;
+    animation-delay: 1s;
+}
+.loader span:nth-child(9)
+{
+    top: 80px;
+    left: 80px;
+    bottom: 80px;
+    right: 80px;
+    animation-delay: 0.9s;
+}
+.loader span:nth-child(10)
+{
+    top: 90px;
+    left: 90px;
+    bottom: 90px;
+    right: 90px;
+    animation-delay: 0.8s;
+}
+.loader span:nth-child(11)
+{
+    top: 100px;
+    left: 100px;
+    bottom: 100px;
+    right: 100px;
+    animation-delay: 0.7s;
+}
+.loader span:nth-child(12)
+{
+    top: 110px;
+    left: 110px;
+    bottom: 110px;
+    right: 110px;
+    animation-delay: 0.6s;
+}
+.loader span:nth-child(13)
+{
+    top: 120px;
+    left: 120px;
+    bottom: 120px;
+    right: 120px;
+    animation-delay: 0.5s;
+}
+.loader span:nth-child(14)
+{
+    top: 130px;
+    left: 130px;
+    bottom: 130px;
+    right: 130px;
+    animation-delay: 0.4s;
+}
+.loader span:nth-child(15)
+{
+    top: 140px;
+    left: 140px;
+    bottom: 140px;
+    right: 140px;
+    animation-delay: 0.3s;
+}
+.loader span:nth-child(16)
+{
+    top: 150px;
+    left: 150px;
+    bottom: 150px;
+    right: 150px;
+    animation-delay: 0.2s;
+}
+.loader span:nth-child(17)
+{
+    top: 160px;
+    left: 160px;
+    bottom: 160px;
+    right: 160px;
+    animation-delay: 0.1s;
+}
+.loader span:nth-child(18)
+{
+    top: 170px;
+    left: 170px;
+    bottom: 170px;
+    right: 170px;
+    animation-delay: 0s;
+}
+}
+
+/* Media query for mobile phones */
+@media (max-width: 480px) {
+  .lay-down-text {
+      font-size: 2.5rem; /* Adjust font size for mobile phones */
+  }
+}
+
