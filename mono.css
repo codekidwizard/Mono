@@ -4373,7 +4373,7 @@ left: 150px;
 }
 
 
-@media (max-width: 347px) {
+@media (max-width: 414px) {
   html {
     overflow-x: hidden;
     }
