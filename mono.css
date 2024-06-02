@@ -3053,7 +3053,7 @@ left: 150px;
   left: 0;
   pointer-events: none;
   z-index: 99999999;
-  opacity: 0; /* so that it stays on top of all other elements */
+  opacity: 1; /* so that it stays on top of all other elements */
 }
 
 @media (max-width: 480px) {
@@ -4346,6 +4346,1326 @@ left: 150px;
       top:200px;
     left: 50px;
     width: 300px;
+        }
+        
+        /* styles.css */
+    /* styles.css */
+    
+    .img5{
+      position: relative;
+      top: 20px;
+      left: 40px;
+    }
+    
+    .circle {
+      height: 24px;
+      width: 24px;
+      border-radius: 24px;
+      background-color: black;
+      position: fixed; 
+      top: 0;
+      left: 0;
+      pointer-events: none;
+      z-index: 99999999;
+      opacity: 0; /* so that it stays on top of all other elements */
+    } 
+
+}
+
+
+@media (max-width: 347px) {
+  html {
+    overflow-x: hidden;
+    }
+    body{
+      overflow-x: hidden;
+    }
+      
+      #popup-button{
+        width: 40px;
+        height: 40px;
+        cursor:pointer;
+        position: relative;
+        left:300px;
+        top: -180px;
+        opacity: 1;
+    }
+    .popup-menu {
+        display: none; /* Hide the menu by default */
+        background-color:#202020;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        padding: 10px;
+        position: absolute;
+        left:50px;
+        top: 80px;
+        z-index: 1000;
+        color:white;
+        width: 400px;
+        height: 350px;
+        border-radius: 20px;
+        opacity: 1;
+      }
+      
+      .popup-menu a {
+        display: block;
+        padding: 10px;
+        text-decoration: none;
+        color: #ffffff;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-decoration: none;
+        font-size: 30px;
+        line-height: 40px;
+    font-family:"DM Sans";
+    font-style: normal;
+    font-weight: 400;
+        opacity: 1;
+        text-align: center;
+      }
+      .btn1 {
+        position: relative;
+        left: 0px;
+        top: 5px;
+        width: 100px;
+        height: 50px;
+        border-radius: 10px;
+        background: #0055ba;
+     color: white;
+     text-decoration: none;
+     border: none;
+     font-size: 18px;
+     line-height: 20px;
+     font-family:"DM Sans";
+     font-style: normal;
+     font-weight: 500;
+    }
+      header{
+        width: 100%;
+        height: 100px;
+        background-color: rgba(255, 255, 255, 0.459);
+        backdrop-filter: blur(2px);
+        position: fixed;
+        z-index: 9999999;
+    }
+    .logo{
+        position: relative;
+        left: 40px;
+        bottom:20px;
+        width: 120px;
+        height: 120px;
+        object-fit: contain;
+    }
+    ul{
+        width: 90%;
+        opacity: 0;
+    }
+    ul li{
+        display: inline-block;
+        margin-left: 2%;
+        transform: all 0.5s ease;
+        position: relative;
+        bottom:115px;
+        left: 500px;
+        opacity: 0;
+      
+    }
+    
+    ul li a{
+        color: black;
+        text-decoration: none;
+        font-size: 18px;
+        line-height: 23px;
+    font-family:"DM Sans";
+    font-style: normal;
+    font-weight: 500;
+    opacity: 0;
+    } 
+    
+      .monow{
+        width: 250px;
+        height: 45px;
+        position: relative;
+        top: 150px;
+        left: 40px;
+    background:#f5f5f5; 
+    border-radius: 25px;
+    }
+    .text1 a{
+        color: black;
+        font-size: 11px;
+        font-family:"DM Sans";
+    font-weight: 500;
+    text-decoration: none;
+    text-align: center;
+    position: relative;
+    top: -20px;
+    left: 73px;
+    }
+    .btn2{
+        background: #0055ba;
+    width: 55px;
+    height: 25px;
+    font-size: 13px;
+    line-height: 25px;
+    font-family:"DM Sans";
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+    position: relative;
+    top: 10px;
+    left: 12px;
+    border-radius: 20px;
+    color: white;
+    }
+    .svg2{
+        position: relative;
+        top: -40px;
+        left: 225px; 
+        width: 20px;
+    }
+    .svg2:hover{
+        position: relative;
+        top: -40px;
+        left: 285px; 
+        width: 20px;
+    }
+    .text2{
+        font-size: 30px;
+        line-height: 45px;
+        font-weight: 500;
+        font-family: 'Duplicate Sanss';
+        width: 300px;
+        position: relative;
+        top: 180px;
+        left: 40px;
+        text-align: left;
+    }
+    .text3{
+        font-size: 15px;
+        line-height: 28px;
+        font-weight: 400;
+        font-family: "DM Sans";
+        width: 300px;
+        position: relative;
+        top: 200px;
+        left: 40px;
+    }
+    @font-face {
+        font-family: 'Duplicate Sanss';
+        src: url('DuplicateSans-Medium.eot');
+        src: local('Duplicate Sans Medium'), local('DuplicateSans-Medium'),
+            url('DuplicateSans-Medium.eot?#iefix') format('embedded-opentype'),
+            url('DuplicateSans-Medium.woff2') format('woff2'),
+            url('DuplicateSans-Medium.woff') format('woff'),
+            url('DuplicateSans-Medium.ttf') format('truetype');
+        font-weight: 500;
+        font-style: normal;
+    }
+    .btn3{
+    width: 190px;
+    height: 55px;
+    border-radius: 10px;
+    border: none;
+    position: relative;
+    top: 220px;
+    left: 40px;
+    line-height: 34px;
+    font-family: "DM Sans";
+    font-size: 18px;
+    background: #0055ba;
+    color: white;
+    }
+    .nc-icon-wrappers{
+        position: relative;
+        top: 5px;
+        width: 15px;
+    }
+    .btn4{
+        width: 160px;
+        height: 55px;
+        border-radius: 10px;
+        border: none;
+        position: relative;
+        top: 230px;
+        left: 40px;
+        line-height: 28px;
+        font-family: "DM Sans";
+        font-size: 18px;
+        background: #f5f5f5;
+        color: black;
+        }
+        .text4{
+            font-size: 15px;
+            line-height: 23px;
+            font-weight: 500;
+            font-family: "DM Sans";
+            width: 680px;
+            position: relative;
+            top: 340px;
+            left: 60px;
+            color:#606060;
+        }
+      .trusted{
+        width: 400px;
+        height: 30px;
+            position: relative;
+            top: 400px;
+            left: 60px; 
+      }
+      .logo1{
+        width: 120px;
+      }
+      .logo2{
+        width: 120px;
+        position: relative;
+        top: -10px;
+        left: 100px; 
+      }
+      .logo3{
+        width: 150px;
+        position: relative;
+        left: -30px; 
+        top: 65px;
+      }
+      .logo4{
+        width: 150px;
+        position: relative;
+        top: 30px;
+        left: 0px; 
+      }
+      .text5{
+        font-size: 30px;
+        line-height: 40px;
+        font-weight: 500;
+        font-family: 'Duplicate Sanss';
+        width: 300px;
+        position: relative;
+        top: 550px;
+        left: 40px;
+        text-align: left; 
+      }
+      .text6{
+        font-size: 15px;
+        line-height: 28px;
+        font-weight: 400;
+        font-family: "DM Sans";
+        width: 300px;
+        position: relative;
+        top: 560px;
+        left: 40px;
+      }
+      .connect{
+        width: 290px;
+        height: 450px;
+        position: relative;
+        top: 600px;
+        left: 40px;
+      }
+      .connectimg{
+        width: 290px;
+        height: 450px;
+    border-radius: 20px;
+      }
+      .connectlogo{
+        width: 60px;
+        position: relative;
+        top: -420px;
+        left: 30px;
+    
+      }
+      .text7{
+        font-size: 40px;
+        line-height: 45px;
+        font-weight: 500;
+        font-family: 'Duplicate Sanss';
+        width: 600px;
+        position: relative;
+        top: -410px;
+        left: 30px;
+        text-align: left; 
+        color: white;
+      }
+      .text8{
+        font-size: 15px;
+        line-height: 25px;
+        font-weight: 400;
+        font-family: "DM Sans";
+        width: 280px;
+        position: relative;
+        top: -390px;
+        left: 30px;
+        color: white;
+      }
+      .btn5{
+        width: 200px;
+        height: 50px;
+        border-radius: 10px;
+        border: none;
+        position: relative;
+        top: -340px;
+        left: 40px;
+        line-height: 30px;
+        font-family: "DM Sans";
+        font-size: 18px;
+        background: white;
+        color: #1462bf;
+      }
+      
+      .DirectPay{
+        width: 290px;
+        height: 450px;
+        position: relative;
+        top: 630px;
+        left: 40px;
+      }
+      .DirectPayimg{
+        width: 290px;
+        height: 450px;
+    border-radius: 20px;
+      }
+      .DirectPaylogo{
+        width: 60px;
+        position: relative;
+        top: -420px;
+        left: 30px;
+
+    
+      }
+      .text9{
+        font-size: 40px;
+        line-height: 45px;
+        font-weight: 500;
+        font-family: 'Duplicate Sanss';
+        width: 600px;
+        position: relative;
+        top: -410px;
+        left: 30px;
+        text-align: left; 
+      }
+      .text10{
+        font-size: 16px;
+        line-height: 23px;
+        font-weight: 400;
+        font-family: "DM Sans";
+        width: 250px;
+        position: relative;
+        top: -390px;
+        left: 30px;
+      }
+      .btn6{
+        width: 200px;
+        height: 55px;
+        border-radius: 10px;
+        border: none;
+        position: relative;
+        top: -370px;
+        left: 30px;
+        line-height: 35px;
+        font-family: "DM Sans";
+        font-size: 18px;
+        color: white;
+        background: #1462bf;
+      }
+      .text11{
+        font-size: 18px;
+        line-height: 23px;
+        font-weight: 500;
+        font-family: "DM Sans";
+        width: 360px;
+        position: relative;
+        top: -350px;
+        left: 30px;
+      }
+      .img2{
+        width: 140px;
+        position: relative;
+        top: -330px;
+        left: 30px;
+      }
+      .Percept{
+        width: 290px;
+        height: 450px;
+        position: relative;
+        top: 660px;
+        left: 40px;
+      }
+      .Perceptimg{
+        width: 290px;
+        height: 450px;
+    border-radius: 20px;
+      }
+      .Perceptlogo{
+        width: 40px;
+        position: relative;
+        top: -410px;
+        left: 30px;
+
+      }
+      .text12{
+        font-size: 40px;
+        line-height: 45px;
+        font-weight: 500;
+        font-family: 'Duplicate Sanss';
+        width: 600px;
+        position: relative;
+        top: -390px;
+        left: 30px;
+        text-align: left; 
+        color: white;
+      }
+      .text13{
+        font-size: 16px;
+        line-height: 23px;
+        font-weight: 400;
+        font-family: "DM Sans";
+        width: 240px;
+        position: relative;
+        top: -370px;
+        left: 30px;
+        color: white;
+      }
+      .btn7{
+        width: 180px;
+        height: 55px;
+        border-radius: 10px;
+        border: none;
+        position: relative;
+        top: -340px;
+        left: 30px;
+        line-height: 40px;
+        font-family: "DM Sans";
+        font-size: 18px;
+        color: white;
+    background: #202020;
+      }
+      .bts{
+        position: relative;
+        top: 2px; 
+        left: 2px;
+      }
+      .text14{
+        position: relative;
+        top: 730px;
+        left: 40px;
+        font-size: 30px;
+        line-height: 40px;
+        font-weight: 500;
+        font-family: 'Duplicate Sanss';
+        width: 290px;
+        text-align: left; 
+      }
+      .text15{
+        position: relative;
+        top: 750px;
+        left: 40px;
+        font-size: 15px;
+        line-height: 28px;
+        font-weight: 400;
+        font-family: "DM Sans";
+        width: 290px;
+      }
+      .slider {
+        display: flex;
+       position:relative;
+     top: 900px;
+      left: 40px;
+        width: 290px;
+        height:1150px; 
+        overflow: hidden;
+        border-radius:20px;
+      }
+      .slide {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+       top:0px;
+        right: 0;
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out;
+        background:#f5f5f5;
+        color: black;
+      }
+      .slide.active {
+        opacity: 1;
+        position: absolute;
+        top: 0px;
+         right: 0;
+      }
+      .btn8{
+        position: relative;
+        top: 60px;
+        left: 30px;
+        font-size: 18px;
+        line-height: 28px;
+        font-weight: 500;
+        font-family: "DM Sans";
+        width: 250px;
+        height: 55px;
+        background: black;
+        color: white;
+        text-align: center;
+        border-radius: 50px;
+      }
+      .text17{
+        position: relative;
+        top: 13px;
+        left: 230px;
+        font-size: 22px;
+        line-height: 28px;
+        font-weight: 500;
+        font-family: "DM Sans";
+        opacity: 0;
+      }
+      .text18{
+        position: relative;
+        top: -13px;
+        left: 530px;
+        font-size: 22px;
+        line-height: 28px;
+        font-weight: 500;
+        font-family: "DM Sans";
+        opacity: 0;
+      }
+      .text19{
+        position: relative;
+        top: -42px;
+        left: 800px;
+        font-size: 22px;
+        line-height: 28px;
+        font-weight: 500;
+        font-family: "DM Sans";
+        opacity: 0;
+      }
+      
+      .text20{
+        position: relative;
+        top: 78px;
+        left: 60px;
+        font-size: 22px;
+        line-height: 28px;
+        font-weight: 500;
+        font-family: "DM Sans";
+        opacity: 0;
+      }
+      .btn9{
+        position: relative;
+        top: 32px;
+        left: 5px;
+        font-size: 22px;
+        line-height: 28px;
+        font-weight: 500;
+        font-family: "DM Sans";
+        width: 280px;
+        height: 60px;
+        background: black;
+        color: white;
+        text-align: center;
+        border-radius: 50px;
+      }
+      .text22{
+        position: relative;
+        top: -10px;
+        left: 530px;
+        font-size: 22px;
+        line-height: 28px;
+        font-weight: 500;
+        font-family: "DM Sans";
+        opacity: 0;
+      }
+      .text23{
+        position: relative;
+        top: -39px;
+        left: 800px;
+        font-size: 22px;
+        line-height: 28px;
+        font-weight: 500;
+        font-family: "DM Sans";
+        opacity: 0;
+      }
+        
+      .text24{
+        position: relative;
+        top: 78px;
+        left: 60px;
+        font-size: 22px;
+        line-height: 28px;
+        font-weight: 500;
+        font-family: "DM Sans";
+        opacity: 0;
+      }
+      .text25{
+        position: relative;
+        top: 52px;
+        left: 200px;
+        font-size: 22px;
+        line-height: 28px;
+        font-weight: 500;
+        font-family: "DM Sans";
+        opacity: 0;
+      }
+      .btn10{
+        position: relative;
+        top: 6px;
+        left: 5px;
+        font-size: 22px;
+        line-height: 28px;
+        font-weight: 500;
+        font-family: "DM Sans";
+        width: 280px;
+        height: 60px;
+        background: black;
+        color: white;
+        text-align: center;
+        border-radius: 50px;
+      }
+      .text27{
+        position: relative;
+        top: -39px;
+        left: 800px;
+        font-size: 22px;
+        line-height: 28px;
+        font-weight: 500;
+        font-family: "DM Sans";
+        opacity: 0;
+      }
+      .text28{
+        position: relative;
+        top: 78px;
+        left: 60px;
+        font-size: 22px;
+        line-height: 28px;
+        font-weight: 500;
+        font-family: "DM Sans";
+        opacity: 0;
+      }
+      .text29{
+        position: relative;
+        top: 52px;
+        left: 200px;
+        font-size: 22px;
+        line-height: 28px;
+        font-weight: 500;
+        font-family: "DM Sans";
+        opacity: 0;
+      }
+      .text30{
+        position: relative;
+        top: 22px;
+        left: 500px;
+        font-size: 22px;
+        line-height: 28px;
+        font-weight: 500;
+        font-family: "DM Sans";
+        opacity: 0;
+      }
+      .btn11{
+        position: relative;
+        top: -19px;
+        left: 5px;
+        font-size: 22px;
+        line-height: 28px;
+        font-weight: 500;
+        font-family: "DM Sans";
+        width: 280px;
+        height: 60px;
+        background: black;
+        color: white;
+        text-align: center;
+        border-radius: 50px;
+      }
+      .text31{
+        position: relative;
+        top: 50px;
+        left: 30px;
+        font-size:30px;
+        line-height: 40px;
+        font-weight: 300;
+        font-family: 'Duplicate Sanss';
+        width: 270px;
+        text-align: left;
+      }
+      .text32{
+        position: relative;
+        top: 70px;
+        left: 30px;
+        font-size: 15px;
+        line-height: 25px;
+        font-weight: 400;
+        font-family: "DM Sans";
+        color: #696969;
+        width: 250px;
+      }
+      .text33{
+        position: relative;
+        top: 100px;
+        left: 30px;
+        font-size: 15px;
+        line-height: 25px;
+        font-weight: 400;
+        font-family: "DM Sans";
+        color: #696969;
+        width: 250px;
+      }
+      .text34{
+        position: relative;
+        top: 120px;
+        left: 30px;
+        font-size: 16px;
+        line-height: 25px;
+        font-weight: 400;
+        font-family: "DM Sans";
+        color: #1462bf;
+        width: 550px;
+      }
+      .nc{
+        position: relative;
+        top: 5px;
+      }
+      .img4{
+        position: relative;
+        top:200px;
+    left: 30px;
+    width: 250px;
+      }
+      .img5l{
+        width: 120px;
+        height: 120px;
+        border-radius: 100%;
+        background: white;
+        box-shadow: 0 0 10 black;
+        position: relative;
+        top:-790px;
+        left: 940px;
+        z-index: 99999;
+        box-shadow: 
+                   0 0 10px #6060607e;
+      }
+      .text35{
+        font-size: 30px;
+        line-height: 40px;
+        font-weight: 500;
+        font-family: 'Duplicate Sanss';
+        width: 290px;
+        position: relative;
+        top: 960px;
+        left: 40px;
+        text-align: left;
+      }
+      .text36{
+        position: relative;
+        top: 980px;
+        left: 40px;
+        font-size: 15px;
+        line-height: 28px;
+        font-weight: 400;
+        font-family: "DM Sans";
+        width: 380px;
+      }
+    
+    .comment{
+      width: 670px;
+      height: 571px;
+      position: relative;
+      top: 680px;
+      left: 40px;
+    }
+    .comment1{
+      width: 290px;
+      height: 551px;
+      background: #f5f5f5;
+      border-radius: 20px;
+      color: #000;
+      animation: cude 20s ease-in-out infinite;
+      z-index: 999999;
+      transition: 0.5s ease-in-out;
+      position: relative;
+      top: 400px;
+    }
+    @keyframes cude {
+      0%{
+        opacity: 1;
+      }
+      50%{
+        opacity: 0;
+        color: #0000007c;
+      }
+      
+      70%{
+        opacity: 0;
+        color: #00000000;
+      }
+      100%{
+        opacity: 1;
+        color: #000;
+      }
+    }
+    .text37{
+      font-size: 30px;
+      line-height: 40px;
+      font-weight: 500;
+      font-family: 'Duplicate Sanss';
+      width: 250px;
+      position: relative;
+      top: 60px;
+      left: 30px;
+      text-align: left;
+    }
+    .comment2{
+      width: 290px;
+      height: 551px;
+      background: #f5f5f5;
+      border-radius: 20px;
+      color: #000;
+      position: relative;
+      top: 411px;
+      left: 0px;
+      animation:  cud 20s ease-in-out infinite;
+      z-index: 999999;
+      transition: 0.5s ease-in-out;
+    }
+    .text38{
+      font-size: 30px;
+      line-height: 40px;
+      font-weight: 500;
+      font-family: 'Duplicate Sanss';
+      width: 250px;
+      position: relative;
+      top: 60px;
+      left: 30px;
+      text-align: left;
+    }
+    @keyframes cud {
+      0%{
+        opacity: 1;
+      }
+      50%{
+        opacity: 0;
+        color: #0000007c;
+      }
+      
+      60%{
+        opacity: 0;
+        color: #00000011;
+      }
+      70%{
+        opacity: 0;
+        color: #00000000;
+      }
+      100%{
+        opacity: 1;
+        color: #000;
+      }
+    }
+    .comment3{
+      width: 290px;
+      height: 571px;
+      background: #f5f5f5;
+      border-radius: 20px;
+      color: #000;
+      position: relative;
+      top: -720px;
+    }
+    .text39{
+      font-size: 30px;
+      line-height: 40px;
+      font-weight: 500;
+      font-family: 'Duplicate Sanss';
+      width: 250px;
+      position: relative;
+      top: 60px;
+      left: 30px;
+      text-align: left;
+    }
+    .comment4{
+      width: 290px;
+      height: 571px;
+      background: #f5f5f5;
+      border-radius: 20px;
+      color: #000;
+      position: relative;
+      top: -700px;
+     left: 0px;
+    }
+    .text40{
+      font-size: 30px;
+      line-height: 40px;
+      font-weight: 500;
+      font-family: 'Duplicate Sanss';
+      width: 250px;
+      position: relative;
+      top: 60px;
+      left: 30px;
+      text-align: left;
+    }
+    .page3{
+      width: 100%;
+      height: 100vh;
+    }
+    .contect{
+      width: 100%;
+      height: 1600px;
+      position: absolute;
+    top: 5300px;
+      left: 0;
+      background-attachment: fixed;
+    }
+    .img7{
+      width: 100%;
+      height: 1600px;
+      position: relative;
+      top: 1750px;
+      left: 0;
+      background-attachment: fixed;
+    }
+    .text41{
+      font-size: 40px;
+      line-height: 55px;
+      font-weight: 500;
+      font-family: 'Duplicate Sanss';
+      width: 500px;
+      position: relative;
+      top: 300px;
+      left: 30px;
+      text-align: left;
+      color: white;
+    }
+    .content1{
+    width: 290px;
+    height: 550px;
+    position: relative;
+    top: 370px;
+    left: 30px;
+    background-color: white;
+    border-radius: 20px;
+    align-items: center;
+    }
+    .content1logo{
+      position: relative;
+    top: 60px;
+    left: 115px;
+    width: 70px;
+    }
+    .text42{
+      font-size: 30px;
+      line-height: 41px;
+      font-weight: 500;
+      font-family: 'Duplicate Sanss';
+      width: 270px;
+      position: relative;
+      top: 80px;
+      left:10px;
+      text-align: center;
+    }
+    .img8{
+      position: relative;
+      left: 20px;
+      top:149px;
+      width: 250px;
+    }
+    .text43{
+      position: relative;
+      top: 90px;
+      left: -180px;
+      font-size: 15px;
+      line-height: 25px;
+      font-weight: 400;
+      font-family: "DM Sans";
+      width: 650px;
+      color: #0055ba;
+      text-align: center;
+    }
+    .nce{
+      position: relative;
+      top: 7px;
+    }
+    
+    .content2{
+      width: 290px;
+    height: 200px;
+    position: relative;
+    top: 400px;
+    left: 30px;
+    background-color: white;
+    border-radius: 20px;
+    }
+    .content2logo{
+      position: relative;
+      top: 10px;
+      left: 115px;
+      border-radius: 0%;
+    }
+    .text44{
+      font-size: 30px;
+      line-height: 38px;
+      font-weight: 500;
+      font-family: 'Duplicate Sanss';
+      width: 270px;
+      position: relative;
+      top: 60px;
+      left: 10px;
+      text-align: center;
+    }
+    .text45{
+      position: relative;
+      top: 75px;
+      left: 80px;
+      font-size: 15px;
+      line-height: 25px;
+      font-weight: 400;
+      font-family: "DM Sans";
+      width: 550px;
+      color: #0055ba;
+    }
+    .content3{
+      width: 290px;
+    height: 200px;
+    position: relative;
+    top: 420px;
+    left: 30px;
+    background-color: white;
+    border-radius: 20px;
+    }
+    .contect3logo{
+      position: relative;
+      top: 10px;
+      left: 115px;
+      border-radius: 0%;
+    }
+    .text46{
+      font-size: 28px;
+      line-height: 38px;
+      font-weight: 500;
+      font-family: 'Duplicate Sanss';
+      width: 290px;
+      position: relative;
+      top: 65px;
+      left: 5px;
+      text-align: center;
+    }
+    .text47{
+      position: relative;
+      top: 75px;
+      left: 100px;
+      font-size: 15px;
+      line-height: 25px;
+      font-weight: 400;
+      font-family: "DM Sans";
+      width: 550px;
+      color: #0055ba;
+    }
+    .content4{
+      width: 290px;
+    height: 200px;
+    position: relative;
+    top: 440px;
+    left: 30px;
+    background-color: white;
+    border-radius: 20px;
+    }
+    .content4logo{
+      position: relative;
+      top: 10px;
+      left: 115px;
+      border-radius: 0%;
+    }
+    .text48{
+      font-size: 30px;
+      line-height: 38px;
+      font-weight: 500;
+      font-family: 'Duplicate Sanss';
+      width: 300px;
+      position: relative;
+      top: 20px;
+      left: -5px;
+      text-align: center;
+    }
+    .text49{
+      position: relative;
+      top: 25px;
+      left: 90px;
+      font-size: 15px;
+      line-height: 25px;
+      font-weight: 400;
+      font-family: "DM Sans";
+      width: 550px;
+      color: #0055ba;
+    }
+    .footer{
+      width: 100%;
+      height: 1350px;
+      background: black;
+      position: relative;
+      top:2600px;
+    }
+    .text50{
+      font-size: 39px;
+      line-height: 55px;
+      font-weight: 500;
+      font-family: 'Duplicate Sanss';
+      width: 400;
+      position: relative;
+      top: 100px;
+      left: 10px;
+      text-align: center;
+      color: white;
+    
+    }
+    .text51{
+      position: relative;
+      top: 100px;
+      left: 30px;
+      font-size: 20px;
+      line-height: 28px;
+      font-weight: 400;
+      font-family: "DM Sans";
+      width: 290px;
+     color: white;
+     text-align: center;
+    }
+    .btn12{
+      width: 200px;
+      height: 55px;
+      border-radius: 10px;
+      border: none;
+      position: relative;
+      top: 140px;
+      left: 80px;
+      line-height: 30px;
+      font-family: "DM Sans";
+      font-size: 18px;
+      background: #0055ba;
+      color: white;
+      }
+      .btn13{
+        width: 200px;
+        height: 55px;
+        border-radius: 10px;
+        border: none;
+        position: relative;
+        top: 150px;
+        left: 80px;
+        line-height: 30px;
+        font-family: "DM Sans";
+        font-size: 18px;
+        background: #202020;
+        color: white;
+        }
+        .ncic{
+          position: relative;
+          top: 5px;
+        }
+        .hr{
+          width: 290px;
+          height: 2px;
+          position: relative;
+          left: 30px;
+          top: 250px;
+          background: #202020;
+          border: none;
+        }
+        .hr1{
+          width: 380px;
+          height: 2px;
+          position: relative;
+          left: 50px;
+          top:-150px;
+          background: #202020;
+          border: none;
+        }
+        .text52{
+          color: #2c2c2c;
+          position: relative;
+          top: 300px;
+          left: 30px;
+          line-height: 35px;
+          font-family: "DM Sans";
+          font-size: 18px;
+        }
+        .text53{
+          color: white;
+          position: relative;
+          top: 310px;
+          left: 30px;
+          line-height: 35px;
+          font-family: "DM Sans";
+          font-size: 18px;
+          font-weight: 300;
+        }
+        .text54{
+          color: #2c2c2c;
+          position: relative;
+          top: -50px;
+          left: 210px;
+          line-height: 35px;
+          font-family: "DM Sans";
+          font-size: 18px;
+        }
+        .text55{
+          color: white;
+          position: relative;
+          top: -40px;
+          left: 210px;
+          line-height: 40px;
+          font-family: "DM Sans";
+          font-size: 18px;
+          font-weight: 300;
+        }
+        .text56{
+          color: #2c2c2c;
+          position: relative;
+          top: 20px;
+          left: 30px;
+          line-height: 35px;
+          font-family: "DM Sans";
+          font-size: 18px;
+        }
+        .text57{
+          color: white;
+          position: relative;
+          top: 30px;
+          left: 30px;
+          line-height: 35px;
+          font-family: "DM Sans";
+          font-size: 18px;
+          font-weight: 300;
+        }
+        .text58{
+          color: #2c2c2c;
+          position: relative;
+          top: -220px;
+          left: 210px;
+          line-height: 35px;
+          font-family: "DM Sans";
+          font-size: 18px;
+        }
+        .text59{
+          color: white;
+          position: relative;
+          top: -210px;
+          left: 210px;
+          line-height: 35px;
+          font-family: "DM Sans";
+          font-size: 18px;
+          font-weight: 300;
+        }
+        .f1{
+      position: relative;
+      top:180px;
+    left: 30px;
+    width: 250px;
+        }
+        .f2{
+    
+      position: relative;
+      top:180px;
+    left: 30px;
+    width: 250px;
+        }
+        .f3{
+    
+      position: relative;
+      top:180px;
+    left: 30px;
+    width: 250px;
         }
         
         /* styles.css */
