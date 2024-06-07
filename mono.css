@@ -1581,7 +1581,7 @@ border-radius: 20px;
     right: 170px;
     animation-delay: 0s;
 }
-@media screen and (max-width: 768px) {
+@media all and (max-width: 768px) {
   html {
 overflow-x: hidden;
 }
@@ -3056,7 +3056,7 @@ left: 150px;
   opacity: 1; /* so that it stays on top of all other elements */
 }
 
-@media screen and (max-width: 480px) {
+@media all and (max-width: 480px) {
   html {
     overflow-x: hidden;
     }
@@ -4373,7 +4373,7 @@ left: 150px;
 }
 
 
-@media screen and (max-width: 414px) {
+@media all and (max-width: 414px) {
   html {
     overflow-x: hidden;
     }
